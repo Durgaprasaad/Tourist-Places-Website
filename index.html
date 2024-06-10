@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="touristPlaces.css" />
+    <script type="module" src="touristPlaces.js"></script>
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <!-- <video src="./imgs/bg.mp4" id="video_bg" autoplay muted loop></video> -->
+      <img src="https://watermark.lovepik.com/photo/40015/7360.jpg_wh1200.jpg" id="video_bg" alt="">
+      <div class="navbar">
+        <img
+          src="./imgs/539f3910c2a6d_thumb900.jpg"
+          id="logo"
+          height="50px"
+          alt=""
+        />
+        <ul>
+          <a href=""><li>Home</li></a>
+
+          <a href=""> <li>Places To Visit</li></a>
+          <a href=""> <li>Latest</li></a>
+          <a href=""> <li>About us</li></a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main_content">
+      <!-- Hyderabad -->
+      <div class="seemore_1">
+        <h4>
+          Nestled in the heart of India's Deccan Plateau, Telangana beckons with
+          its vibrant culture, rich history, and breathtaking landscapes.
+        </h4>
+        <p>
+          Wander through the ancient lanes of the Old City, where the majestic
+          Charminar stands tall, whispering tales of a bygone era.
+        </p>
+        <button id="seemorehyd" class="telangana">See More</button>
+      </div>
+      <div class="imgg">
+        <img src="./imgs/charminar.jpg" height="450px" alt="" />
+      </div>
+    </div>
+
+    <div class="main_content2">
+      <!-- delhi -->
+      <div class="seemore_2">
+        <h4>
+          Discover the heartbeat of India in Delhi, where centuries of history
+          coalesce with the pulsating rhythm of modern life.
+        </h4>
+        <p>
+          From the serene beauty of Lotus Temple to the grandeur of India Gate,
+          Delhi beckons you to explore its eclectic blend of tradition and
+          progress, making it a must-visit destination for every traveler.
+        </p>
+        <button id="seemoreDelhi">See More</button>
+      </div>
+      <div class="imgg2">
+        <img src="./imgs/1695965623127.jpeg" height="520px" alt="" />
+      </div>
+    </div>
+
+    <!-- kerala -->
+    <div class="main_content3">
+      <div class="seemore_3">
+        <h4>
+          Embark on a journey to Kerala, a land of lush greenery, tranquil
+          backwaters, and pristine beaches that captivate the soul.
+        </h4>
+        <p>
+          Relax on the golden sands of Kovalam or Varkala, where the soothing
+          sound of waves lulls you into a state of bliss. Whether it's
+          experiencing a rejuvenating Ayurvedic massage or savoring spicy local
+          delicacies, Kerala offers a truly enchanting escape into nature's
+          embrace.
+        </p>
+        <button id="seeMoreKerala">See More</button>
+      </div>
+      <div class="imgg3">
+        <img src="./imgs/kerala2.webp" height="450px" alt="" />
+      </div>
+    </div>
+
+    <!-- Goa -->
+    <div class="main_content4">
+      <div class="seemore_4">
+        <h4>
+          Welcome to the land of sun, sand, and sea - welcome to Goa! Nestled on
+          the western coast of India, Goa is a vibrant paradise renowned for its
+          stunning beaches,
+        </h4>
+        <p>
+          Goa promises an unforgettable experience that will leave you enchanted
+          and eager to return. Come, let Goa cast its spell on you.
+        </p>
+        <button id="seemoregoa">See More</button>
+      </div>
+      <div class="imgg4" style="position: relative">
+        <img src="./imgs/goa.jpg" height="480px" alt="" />
+      </div>
+      <img src="" alt="" />
+    </div>
+
+    <div class="footer1">
+      <div style="display: flex; margin-left: 50px;">
+        <div class="inner">
+          <h4>ABOUT VisitIndia</h4>
+          <p>ABOUT US</p>
+          <p>VisitIndia REVIEWS</p>
+          <p>WE ARE HIRING</p>
+          <p>PRIVACY POLICIES</p>
+          <p>COPYRIGHT POLICIES</p>
+          <p>APPS</p>
+          <p>SUPPORT</p>
+        </div>
+
+        <div class="inner" style="margin-left: 30px;">
+          <h4>FOR SUPPLIERS</h4>
+          <p>ABOUT US</p>
+          <h4>FOR BRANDS</h4>
+          <p>PARTNER WITH US</p>
+          <p>DESTINATION MARKETING</p>
+          <h4>FOR TRAVEL AGENTS</h4>
+          <p>SIGN UP AS A AGENT</p>
+          <p>AGENT LOGIN</p>
+        </div>
+
+        <div class="inner">
+          <h4>FOR TRAVELLERS</h4>
+          <p>GIFT AN EXPERIENCE</p>
+        </div>
+      </div>
+
+      <div style="margin-left: 80px;">
+        <h4>TRAVEL DESTINATIONS</h4>
+        <img src="./imgs/Screenshot 2024-04-14 194840.png" height="300px" alt="">
+
+      </div>
+    </div>
+
+    <div class="mainftr">
+
+      <div class="mainftrchild">
+        <h3>© 2024 VisitIndia.com All rights reserved.</h3>
+        <p>The content and images used on this site are copyright protected and copyrights vests with the respective owners. The usage of the content and images on this website is intended to promote the works</p>
+        <p>and no endorsement of the artist shall be implied. Unauthorized use is prohibited and punishable by law.</p>
+      </div>
+
+    </div>
+
+    <script>
+      let array = [
+        {
+          name: "Charminar",
+          image: "./imgs/charminar.jpg",
+          caption: " A Symbol of Hyderabad's Splendor ",
+          description:
+            " Charminar, meaning Four Towers, is an iconic monument located in the heart of Hyderabad, India. Built in 1591 by Sultan Muhammad Quli Qutb Shah, it stands as a majestic tribute to the city's rich history and architectural brilliance. ",
+          historicalSignificance:
+            "Charminar was constructed to commemorate the eradication of a plague epidemic that ravaged the city. It also served as a ceremonial gateway for visitors.     ",
+          Symbol:
+            " It serves as a symbol of Hyderabad's cultural and historical significance, attracting tourists from all over the world.   ",
+          Cultural:
+            "It serves as a symbol of Hyderabad's cultural and historical significance, attracting tourists from all over the world  ",
+          keyFeatures: {
+            one: "Majestic Islamic architecture with four grand arches, each facing a cardinal direction. ",
+            two: "Intricate stucco work, floral motifs, and inscriptions adorn the structure, reflecting the grandeur of the era.  ",
+            three:
+              "The minarets offer a panoramic view of the bustling streets and heritage sites of Hyderabad.  ",
+          },
+        },
+        {
+          name: "Hussain Sagar",
+          image:
+            "https://www.bestbus.in/assets/images/tourist-attractions/hussain-sagar-lake.jpg",
+          caption: " The Heart-Shaped Lake ",
+          description:
+            " Hussain Sagar is a large lake located in the heart of Hyderabad, Telangana, India. Built in 1563 by Ibrahim Quli Qutb Shah, it connects the twin cities of Hyderabad and Secunderabad. ",
+          historicalSignificance:
+            "Hussain Sagar was built during the reign of Ibrahim Quli Qutb Shah to meet the water and irrigation needs of the city. It has since become a prominent landmark and a recreational hub for locals and tourists alike.     ",
+          Symbol:
+            " It symbolizes the rich heritage and architectural prowess of the Qutb Shahi dynasty, attracting visitors from around the world.   ",
+          Cultural:
+            "It holds cultural significance as a gathering place for various events, festivals, and recreational activities, reflecting the vibrant spirit of Hyderabad.  ",
+          keyFeatures: {
+            one: "Spanning approximately 5.7 square kilometers, Hussain Sagar is one of the largest man-made lakes in India. ",
+            two: "The iconic monolithic statue of Lord Buddha, erected in the middle of the lake, adds to its charm and spiritual significance. ",
+            three:
+              "Surrounded by landscaped gardens, promenades, and recreational facilities, Hussain Sagar offers breathtaking views and leisure opportunities to visitors.  ",
+          },
+        },
+        {
+          name: "Golconda Fort",
+          image: "./imgs/Golkonda-fort.jpg",
+          caption: " The Impregnable Fortress ",
+          description:
+            " Golconda Fort, also known as Golkonda or Golla Konda, is a majestic fortress located in Hyderabad, Telangana, India. Originally built during the Kakatiya dynasty, it was further fortified and expanded by the Qutb Shahi kings. ",
+          historicalSignificance:
+            "Golconda Fort played a crucial role in the history of the Deccan region, serving as the capital of the Qutb Shahi dynasty. It was a major center for trade, commerce, and diamond mining during its heyday.     ",
+          Symbol:
+            " It symbolizes the military prowess and architectural brilliance of the medieval era, attracting history enthusiasts and tourists from around the globe.   ",
+          Cultural:
+            "It holds cultural significance as a testament to the rich heritage and multiculturalism of Hyderabad, showcasing a blend of Hindu and Islamic architectural styles.  ",
+          keyFeatures: {
+            one: "The fort is renowned for its advanced military architecture, including robust ramparts, intricate gateways, and defensive structures such as bastions and moats. ",
+            two: "The fabled Fateh Darwaza (Gate of Victory) adorned with acoustic features that allowed the sounds of approaching footsteps to be heard from afar, ensuring security. ",
+            three:
+              "The fort complex houses several notable structures, including the majestic Durbar Hall, the royal residences, granaries, mosques, and ancient water supply systems.  ",
+          },
+        },
+        {
+          name: "Nehru Zoological Park",
+          image: "./imgs/nehru.jpg",
+          caption: " An Oasis of Wildlife ",
+          description:
+            " Nehru Zoological Park, located in Hyderabad, Telangana, India, is one of the largest zoological parks in Asia. Established in 1959, it spans over 380 acres and is home to a diverse range of flora and fauna. ",
+          historicalSignificance:
+            "Nehru Zoological Park was established with the aim of promoting wildlife conservation, education, and research. It has since become a popular destination for families, students, and wildlife enthusiasts.     ",
+          Symbol:
+            " It symbolizes the city's commitment to preserving biodiversity and promoting environmental awareness, offering visitors an opportunity to connect with nature and learn about wildlife conservation.   ",
+          Cultural:
+            "It holds cultural significance as a recreational hub and educational resource, fostering appreciation for wildlife and environmental stewardship among visitors of all ages.  ",
+          keyFeatures: {
+            one: "The park houses over 1,500 species of animals, birds, and reptiles, including endangered and exotic species such as Indian rhinoceros, Asiatic lion, and white tiger. ",
+            two: "It features naturalistic habitats and enclosures designed to mimic the animals' native environments, providing them with ample space and enrichment opportunities. ",
+            three:
+              "In addition to its diverse wildlife exhibits, Nehru Zoological Park offers amenities such as safari rides, animal shows, educational programs, and conservation initiatives to engage visitors and promote environmental awareness.  ",
+          },
+        },
+        {
+          name: "Red Fort",
+          image:
+            "https://www.alightindia.com/cdn/uploads/postimages/ORIGINAL/Lal%20Qila%20%20Wendy--e3656d.jpg",
+          caption: " A Symbol of Mughal Grandeur ",
+          description:
+            " The Red Fort, also known as Lal Qila, is a historic fort located in the heart of Old Delhi, India. Built in the 17th century by the Mughal Emperor Shah Jahan, it served as the main residence of the Mughal emperors for nearly 200 years. ",
+          historicalSignificance:
+            "The Red Fort stands as a symbol of Mughal architectural brilliance and imperial power. It was the site where India's independence was declared by Prime Minister Jawaharlal Nehru on August 15, 1947.     ",
+          Symbol:
+            " It symbolizes India's rich cultural heritage and struggle for independence, attracting visitors from around the world to marvel at its grandeur and historical significance.   ",
+          Cultural:
+            "It holds cultural significance as a UNESCO World Heritage Site and a venue for the annual Independence Day celebrations, showcasing India's vibrant cultural heritage and national pride.  ",
+          keyFeatures: {
+            one: "The fort complex spans over 250 acres and features exquisite Mughal architecture, including intricate marble inlays, delicate carvings, and ornate pavilions. ",
+            two: "The iconic Lahore Gate and Delhi Gate serve as grand entrances to the fort, each adorned with impressive facades and imposing bastions. ",
+            three:
+              "The Diwan-i-Aam (Hall of Public Audience) and Diwan-i-Khas (Hall of Private Audience) are among the notable structures within the fort, reflecting the opulence and grandeur of the Mughal era.  ",
+          },
+        },
+        {
+          name: "Qutub Minar",
+          image:
+            "https://media.istockphoto.com/id/1160975059/photo/qutub-minar-and-its-monuments-delhi.jpg?s=612x612&w=0&k=20&c=nCQpmVYsfFYpMg8i-6kQkuHfQ9P-5IXGxyADVItiD_k=",
+          caption: " A Towering Landmark ",
+          description:
+            " The Qutub Minar is a soaring tower located in the Qutb complex of Delhi, India. Built in the early 13th century by Qutb-ud-din Aibak, it stands as a testament to the city's rich history and architectural heritage. ",
+          historicalSignificance:
+            "The Qutub Minar is renowned as the tallest brick minaret in the world and a UNESCO World Heritage Site. It commemorates the victory of Muslim rule in India and serves as a symbol of Islamic art and architecture.     ",
+          Symbol:
+            " It symbolizes Delhi's multicultural identity and historical legacy, attracting visitors with its intricate carvings, ancient inscriptions, and panoramic views from the top.   ",
+          Cultural:
+            "It holds cultural significance as a sacred site for both Muslims and Hindus, reflecting the syncretic nature of Indian society and the enduring legacy of Delhi's medieval past.  ",
+          keyFeatures: {
+            one: "The Qutub Minar stands at a height of 72.5 meters (237.8 feet) and features five distinct stories, each adorned with intricate balconies, calligraphy, and geometric patterns. ",
+            two: "The surrounding Qutb complex houses several other architectural marvels, including the Quwwat-ul-Islam Mosque, Alai Darwaza, and Iron Pillar of Delhi, dating back to the 4th century CE. ",
+            three:
+              "Visitors can ascend the spiral staircase inside the minaret to enjoy panoramic views of Delhi's skyline and explore the rich history and cultural heritage of the Qutb complex.  ",
+          },
+        },
+        {
+          name: "India Gate",
+          image:
+            "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202111/indiagate.jpg",
+          caption: " An Iconic War Memorial ",
+          description:
+            " India Gate is a monumental arch located in the heart of New Delhi, India. Built in the early 20th century as a memorial to Indian soldiers who died in World War I, it stands as a tribute to their sacrifice and valor. ",
+          historicalSignificance:
+            "India Gate serves as a national symbol of remembrance and patriotism, honoring the memory of over 70,000 Indian soldiers who lost their lives fighting for the British Empire during World War I.     ",
+          Symbol:
+            " It symbolizes India's resilience and spirit of unity in the face of adversity, drawing visitors and locals alike to pay homage to the nation's fallen heroes and celebrate its rich military heritage.   ",
+          Cultural:
+            "It holds cultural significance as a popular gathering place for picnics, festivals, and recreational activities, reflecting the vibrant social fabric and communal spirit of New Delhi.  ",
+          keyFeatures: {
+            one: "The imposing India Gate stands at a height of 42 meters (138 feet) and features intricate carvings, inscriptions, and bas-reliefs honoring the soldiers who sacrificed their lives during the war. ",
+            two: "Surrounded by lush lawns and gardens, the memorial serves as a serene oasis amidst the bustling streets of New Delhi, providing a peaceful retreat for visitors to relax and reflect. ",
+            three:
+              "The Amar Jawan Jyoti, an eternal flame burning beneath the arch, symbolizes the undying spirit of India's soldiers and serves as a solemn reminder of their sacrifice and bravery.  ",
+          },
+        },
+        {
+          name: "Lotus Temple",
+          image:
+            "https://www.fabhotels.com/blog/wp-content/uploads/2019/05/Lotus-Temple_1400-1.jpg:cf-webp:w-1400:h-500",
+          caption: " A Symbol of Unity and Peace ",
+          description:
+            " The Lotus Temple, located in New Delhi, India, is a Bahá'í House of Worship known for its distinctive lotus-shaped architecture and serene ambiance. Built in 1986, it serves as a spiritual center for people of all faiths. ",
+          historicalSignificance:
+            "The Lotus Temple is renowned as a symbol of unity, diversity, and religious tolerance, welcoming visitors from around the world to meditate, pray, and reflect in its tranquil surroundings.     ",
+          Symbol:
+            " It symbolizes the Bahá'í faith's principles of unity, equality, and harmony among all people, transcending cultural, religious, and national boundaries to foster understanding and peace.   ",
+          Cultural:
+            "It holds cultural significance as a spiritual sanctuary and architectural marvel, drawing inspiration from nature's beauty and universal themes of love, compassion, and enlightenment.  ",
+          keyFeatures: {
+            one: "The Lotus Temple's unique lotus-shaped design features 27 marble-clad petals arranged in clusters of three, symbolizing the interconnectedness of all religions and the essential unity of humanity. ",
+            two: "The central prayer hall, with its spacious interior and serene atmosphere, offers a quiet space for visitors to meditate, contemplate, and connect with their inner selves and the divine. ",
+            three:
+              "Surrounded by lush gardens and reflecting pools, the Lotus Temple provides a peaceful oasis amidst the bustling city, inviting people of all backgrounds to seek solace, inspiration, and spiritual renewal.  ",
+          },
+        },
+        {
+          name: "Alleppey (Alappuzha)",
+          image:
+            "https://keralatourism.travel/images/destinations/headers/alleppey-kerala-tourism-entry-fee-timings-holidays-reviews-header.jpg",
+          caption: " The Venice of the East ",
+          description:
+            " Alleppey, also known as Alappuzha, is a picturesque town located in the backwaters of Kerala, India. Renowned for its serene canals, lush paddy fields, and tranquil backwater cruises, it offers visitors a glimpse into the idyllic charm of Kerala's coastal landscape. ",
+          historicalSignificance:
+            "Alleppey has a rich history as a major center for trade, commerce, and cultural exchange since ancient times. It was once a prominent port city under the rule of various dynasties and colonial powers.     ",
+          Symbol:
+            " It symbolizes Kerala's unique blend of natural beauty, cultural heritage, and traditional way of life, attracting tourists from around the world to experience its enchanting backwaters and vibrant village life.   ",
+          Cultural:
+            "It holds cultural significance as a hub for traditional boat races, folk arts, and festivals, showcasing Kerala's rich cultural heritage and communal harmony among its diverse communities.  ",
+          keyFeatures: {
+            one: "Alleppey is renowned for its extensive network of backwater canals, lagoons, and lakes, offering visitors the opportunity to explore its scenic beauty aboard traditional houseboats or country canoes. ",
+            two: "The annual Nehru Trophy Boat Race, held on the Punnamada Lake in Alleppey, is a major cultural event that attracts thousands of spectators and participants from across Kerala and beyond. ",
+            three:
+              "Alleppey's vibrant marketplaces, waterfront promenades, and historic landmarks such as the Alappuzha Beach, Krishnapuram Palace, and St. Mary's Forane Church provide visitors with a glimpse into its rich cultural and architectural heritage.  ",
+          },
+        },
+        {
+          name: "Wayanad",
+          image:
+            "https://www.thehosteller.com/_next/image?url=https%3A%2F%2Fstatic.thehosteller.com%2Fhostel%2Fimages%2Fsteptodown.com267190%20(1).jpg%2Fsteptodown.com267190%20(1)-1700472157205.jpg&w=3840&q=75",
+          caption: " The Land of Green Paradise ",
+          description:
+            " Wayanad is a scenic district located in the Western Ghats of Kerala, India. Known for its lush greenery, mist-clad mountains, and pristine natural beauty, it offers travelers a tranquil retreat amidst nature's bounty. ",
+          historicalSignificance:
+            "Wayanad is steeped in history and mythology, with ancient caves, temples, and tribal settlements dating back thousands of years. It was once part of the Kottayam kingdom and later came under the rule of various dynasties and colonial powers.     ",
+          Symbol:
+            " It symbolizes Kerala's unspoiled natural beauty, biodiversity, and eco-tourism potential, attracting nature lovers, adventure enthusiasts, and wildlife photographers from around the world.   ",
+          Cultural:
+            "It holds cultural significance as a melting pot of diverse indigenous cultures, traditions, and cuisines, reflecting the harmonious coexistence of tribal communities, settlers, and migrants in the region.  ",
+          keyFeatures: {
+            one: "Wayanad is home to lush rainforests, sparkling waterfalls, and verdant tea, coffee, and spice plantations, offering visitors endless opportunities for trekking, birdwatching, and nature photography. ",
+            two: "The Wayanad Wildlife Sanctuary, located in the heart of the district, is a biodiversity hotspot teeming with rare and endemic species of flora and fauna, including elephants, tigers, leopards, and Malabar giant squirrels. ",
+            three:
+              "Wayanad's cultural attractions, such as the Edakkal Caves, Thirunelli Temple, and Banasura Sagar Dam, provide insights into its rich history, mythology, and architectural heritage, attracting history buffs and spiritual seekers alike.  ",
+          },
+        },
+        {
+          name: "Kozhikode (Calicut)",
+          image:
+            "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/kozhikode-beach-2-20230509170339267388.webp",
+          caption: " The City of Spices ",
+          description:
+            " Kozhikode, also known as Calicut, is a historic city located on the Malabar Coast of Kerala, India. Renowned for its centuries-old maritime trade, colonial heritage, and exotic spices, it offers visitors a glimpse into Kerala's rich cultural and culinary legacy. ",
+          historicalSignificance:
+            "Kozhikode has a rich history as a major port city and trading hub since ancient times, attracting merchants, explorers, and settlers from across the globe. It was once the capital of the powerful Zamorin dynasty and a thriving center for trade, commerce, and cultural exchange.     ",
+          Symbol:
+            " It symbolizes Kerala's maritime legacy, cosmopolitan ethos, and culinary heritage, drawing visitors with its bustling markets, historic landmarks, and delectable Malabari cuisine.   ",
+          Cultural:
+            "It holds cultural significance as a melting pot of diverse communities, languages, and religions, reflecting the vibrant social fabric and communal harmony that define Kerala's multicultural identity.  ",
+          keyFeatures: {
+            one: "Kozhikode's historic landmarks, such as the Kappad Beach, Beypore Port, and Pazhassiraja Museum, provide insights into its rich maritime history, colonial heritage, and cultural contributions to Kerala's identity. ",
+            two: "The bustling markets of Kozhikode, including the Spice Market, Sweet Meat Street, and Mittai Theruvu (Sweet Street), offer visitors a sensory feast of flavors, aromas, and colors, showcasing the region's diverse culinary traditions and delicacies. ",
+            three:
+              "Kozhikode's vibrant festivals, such as the Kozhikode Beach Festival, Malabar Mahotsavam, and Boat Races, celebrate its cultural heritage, traditional arts, and performing arts, attracting tourists and locals alike to participate in the festivities.  ",
+          },
+        },
+        {
+          name: "Bekal",
+          image:
+            "https://www.tajhotels.com/content/dam/thrp/destinations/Bekal/16x7intro/Bekal-Intro-16x7.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+          caption: " A Coastal Paradise ",
+          description:
+            " Bekal is a scenic coastal town located in the Kasaragod district of Kerala, India. Known for its pristine beaches, historic fort, and scenic backwaters, it offers travelers a tranquil retreat amidst nature's beauty. ",
+          historicalSignificance:
+            "Bekal has a rich history as a strategic military outpost and trading center dating back to ancient times. It was once ruled by various dynasties and colonial powers, including the Kadambas, Vijayanagara Empire, and Tipu Sultan, before coming under British rule.     ",
+          Symbol:
+            " It symbolizes Kerala's coastal charm, architectural heritage, and eco-tourism potential, attracting visitors with its stunning vistas, cultural landmarks, and serene ambiance.   ",
+          Cultural:
+            "It holds cultural significance as a cultural and historical landmark, showcasing the architectural brilliance and military prowess of its erstwhile rulers, while offering visitors insights into Kerala's rich maritime history and cultural heritage.  ",
+          keyFeatures: {
+            one: "Bekal is home to the iconic Bekal Fort, a historic citadel overlooking the Arabian Sea, which offers panoramic views of the coastline and surrounding landscapes",
+            two: "The bekal Wildlife Sanctuary, located in the heart of the district, is a biodiversity hotspot teeming with rare and endemic species of flora and fauna, including elephants, tigers, leopards, and Malabar giant squirrels. ",
+            three:
+              "bekal's cultural attractions, such as the Edakkal Caves, Thirunelli Temple, and Banasura Sagar Dam, provide insights into its rich history, mythology, and architectural heritage, attracting history buffs and spiritual seekers alike.  ",
+          },
+        },
+        {
+          name: "Palolem Beach",
+          image:
+            "https://www.tourmyindia.com/states/goa/image/palolem-beach-banner.webp",
+          caption: " A Paradise in South Goa ",
+          description:
+            " Palolem Beach is a scenic stretch of coastline located in South Goa, India. Known for its pristine beauty, calm waters, and laid-back atmosphere, it attracts travelers seeking relaxation and natural splendor. ",
+          historicalSignificance:
+            "Palolem Beach was once a fishing village before gaining popularity as a tourist destination in the 1980s. It has since become a favorite spot for beachgoers, backpackers, and yoga enthusiasts from around the world.     ",
+          Symbol:
+            " It symbolizes Goa's reputation as a tropical paradise, offering visitors a tranquil retreat amidst swaying palm trees, golden sands, and crystal-clear waters.   ",
+          Cultural:
+            "It holds cultural significance as a melting pot of cultures, with a diverse mix of locals, expatriates, and international tourists contributing to its vibrant and cosmopolitan ambiance.  ",
+          keyFeatures: {
+            one: "Palolem Beach is renowned for its crescent-shaped shoreline, fringed by palm trees and dotted with colorful beach huts, cafes, and shacks offering fresh seafood and refreshing drinks. ",
+            two: "The calm and shallow waters of Palolem Beach make it ideal for swimming, kayaking, and stand-up paddleboarding, while the nearby cliffs provide stunning panoramic views of the Arabian Sea at sunset. ",
+            three:
+              "Visitors can also enjoy activities such as dolphin-watching boat trips, yoga and meditation sessions, and beachside bonfires, immersing themselves in the laid-back vibe and natural beauty of Palolem Beach.  ",
+          },
+        },
+        {
+          name: "Deltin Royale",
+          image:
+            "https://www.deltin.com/assets/slides/cms_slideshow_pic_620200416.1304.jpg",
+          caption: " The Ultimate Gaming Experience ",
+          description:
+            " Deltin Royale is a luxurious floating casino located on the Mandovi River in Panaji, Goa. As India's largest and most opulent casino ship, it offers an unparalleled gaming experience amidst a backdrop of scenic river views. ",
+          historicalSignificance:
+            "Deltin Royale was launched in 2013 as part of the Deltin Group's efforts to redefine Goa's entertainment and hospitality industry. It has since become a premier destination for high-stakes gambling, live entertainment, and gourmet dining.     ",
+          Symbol:
+            " It symbolizes Goa's vibrant nightlife and entertainment scene, attracting high-rollers, celebrities, and thrill-seekers to its state-of-the-art gaming facilities, world-class restaurants, and exclusive VIP lounges.   ",
+          Cultural:
+            "It holds cultural significance as a hub of luxury and indulgence, offering guests an immersive and unforgettable experience that combines the excitement of casino gaming with the glamour of a five-star resort.  ",
+          keyFeatures: {
+            one: "Deltin Royale features over 40,000 square feet of gaming space spread across four decks, offering a wide range of table games, slot machines, and electronic gaming terminals to suit every taste and preference. ",
+            two: "The casino hosts regular tournaments, events, and live entertainment performances, including international DJs, live bands, and dance shows, ensuring non-stop excitement and thrills for guests throughout their stay. ",
+            three:
+              "In addition to its gaming facilities, Deltin Royale offers luxurious amenities such as fine dining restaurants, premium bars, spa and wellness services, and opulent suites with panoramic views of the river and city skyline.  ",
+          },
+        },
+        {
+          name: "Fontainhas",
+          image:
+            "https://paramountclientweb.s3.ap-south-1.amazonaws.com/indian-holiday-trip/Place/2023/Apr/Img_8300_202357141232_fontainhas.jpg",
+          caption: " A Slice of Portugal in India ",
+          description:
+            " Fontainhas is a charming neighborhood located in Panaji, the capital city of Goa, India. Known for its vibrant colors, colonial architecture, and narrow winding streets, it transports visitors back in time to the Portuguese colonial era. ",
+          historicalSignificance:
+            "Fontainhas was established by the Portuguese in the late 18th century and has retained much of its original charm and character over the centuries. It is named after the natural springs (fontes) that once flowed through the area, supplying water to the local residents.     ",
+          Symbol:
+            " It symbolizes Goa's multicultural heritage and architectural legacy, with its pastel-colored houses, ornate balconies, and quaint cobblestone streets evoking a sense of nostalgia and romance.   ",
+          Cultural:
+            "It holds cultural significance as a UNESCO World Heritage Site and a living museum of Goan history and culture, with its fusion of Portuguese and Indian influences reflected in its cuisine, music, art, and festivals.  ",
+          keyFeatures: {
+            one: "Fontainhas is home to several iconic landmarks, including the Chapel of St. Sebastian, the Maruti Temple, and the Menezes Braganza Pereira House, each showcasing the unique blend of European and Indian architectural styles prevalent in the area. ",
+            two: "Visitors can explore the narrow alleys and hidden corners of Fontainhas on foot or by bicycle, discovering charming cafes, art galleries, boutique shops, and heritage homes along the way. ",
+            three:
+              "The neighborhood comes alive during festivals such as Sao Joao (Feast of St. John) and Carnival, with colorful processions, traditional music and dance performances, and vibrant street celebrations showcasing the rich cultural tapestry of Goa's diverse communities.  ",
+          },
+        },
+        {
+          name: "Fort Aguada",
+          image:
+            "https://goa-tourism.org.in/images/places-to-visit/headers/fort-aguada-goa-entry-fee-timings-holidays-reviews-header.jpg",
+          caption: " A Historic Coastal Fortress ",
+          description:
+            " Fort Aguada is a 17th-century Portuguese fort located on the Sinquerim Beach in North Goa, India. Built to guard against enemy invasions and protect the Portuguese colonial territory, it offers panoramic views of the Arabian Sea and surrounding coastline. ",
+          historicalSignificance:
+            "Fort Aguada was constructed in 1612 as part of a defensive system to safeguard the entrance to the Mandovi River and protect Portuguese ships from pirate attacks. Its strategic location and sturdy construction made it one of the most formidable fortresses in Asia during its time.     ",
+          Symbol:
+            " It symbolizes Goa's maritime heritage and colonial legacy, with its imposing ramparts, towering lighthouse, and underground water reservoirs serving as reminders of the region's rich history and military significance.   ",
+          Cultural:
+            "It holds cultural significance as a popular tourist attraction and heritage site, offering visitors an opportunity to explore Goa's colonial past, enjoy panoramic views of the coastline, and witness spectacular sunsets over the Arabian Sea.  ",
+          keyFeatures: {
+            one: "Fort Aguada is renowned for its massive stone walls, bastions, and watchtowers, which encircle the fort and provide strategic vantage points for defending against enemy attacks from land and sea. ",
+            two: "The fort's centerpiece is the iconic Aguada Lighthouse, built in 1864, which stands as a beacon of maritime safety and navigation, guiding ships along the treacherous coastline of Goa. ",
+            three:
+              "Visitors can explore the interior of Fort Aguada, including its underground",
+          },
+        },
+      ];
+
+      hyd = document.getElementById("seemorehyd");
+      hyd.addEventListener("click", () => {
+        window.location.assign("../hyd.html");
+        call();
+        localStorage.setItem("telangana", JSON.stringify(array));
+      });
+
+      delhiButton = document.getElementById("seemoreDelhi");
+      delhiButton.addEventListener("click", () => {
+        window.location.assign("./delhi.html");
+        call();
+      });
+      function call() {
+        localStorage.setItem("telangana", JSON.stringify(array));
+      }
+
+      seeMoreKerala = document.getElementById("seeMoreKerala");
+      seeMoreKerala.addEventListener("click", () => {
+        window.location.assign("./kerala.html");
+        localStorage.setItem("telangana", JSON.stringify(array));
+      });
+
+      seemoregoa = document.getElementById("seemoregoa");
+      seemoregoa.addEventListener("click", () => {
+        window.location.assign("./goa.html");
+        call();
+        localStorage.setItem("telangana", JSON.stringify(array));
+      });
+
+      //  let hyd = document.querySelectorAll(".telangana");
+      //   console.log(hyd);
+      //   hyd.forEach((item)=>{
+      //       item.addEventListener("click", () => {
+      //         idd=item.getAttribute("id")
+      //         console.log(idd);
+      //        setlocalstorage(idd)
+      //   });
+
+      //   })
+
+      //   function setlocalstorage(placeid){
+      //    let obj = arr.find((item)=>{
+      //       return item.id==placeid;
+      //     })
+      //     console.log(obj);
+      //     localStorage.setItem("placeobj",JSON.stringify(obj))
+      //   }
+
+      // delhi = document.getElementById("seemoreDelhi");
+      // hyd.addEventListener("click", () => {
+      //   window.location.assign("./hyd.html");
+      //   sessionStorage.clear();
+      //   sessionStorage.setItem("delhi",JSON.stringify(delhi))
+      // });
+
+      // {
+      //         "delhi": {
+      //           "redFort": {
+      //             "name": "Red Fort",
+      //             "image": "./imgs/red_fort.jpg",
+      //             "caption": " A Symbol of Mughal Grandeur ",
+      //             "description": " The Red Fort, also known as Lal Qila, is a historic fort located in the heart of Old Delhi, India. Built in the 17th century by the Mughal Emperor Shah Jahan, it served as the main residence of the Mughal emperors for nearly 200 years. ",
+      //             "historicalSignificance": "The Red Fort stands as a symbol of Mughal architectural brilliance and imperial power. It was the site where India's independence was declared by Prime Minister Jawaharlal Nehru on August 15, 1947.     ",
+      //             "Symbol": " It symbolizes India's rich cultural heritage and struggle for independence, attracting visitors from around the world to marvel at its grandeur and historical significance.   ",
+      //             "Cultural": "It holds cultural significance as a UNESCO World Heritage Site and a venue for the annual Independence Day celebrations, showcasing India's vibrant cultural heritage and national pride.  ",
+      //             "keyFeatures": {
+      //               "one": "The fort complex spans over 250 acres and features exquisite Mughal architecture, including intricate marble inlays, delicate carvings, and ornate pavilions. ",
+      //               "two": "The iconic Lahore Gate and Delhi Gate serve as grand entrances to the fort, each adorned with impressive facades and imposing bastions. ",
+      //               "three": "The Diwan-i-Aam (Hall of Public Audience) and Diwan-i-Khas (Hall of Private Audience) are among the notable structures within the fort, reflecting the opulence and grandeur of the Mughal era.  "
+      //             }
+      //           },
+      //           "qutabMinar": {
+      //             "name": "Qutub Minar",
+      //             "image": "./imgs/qutub_minar.jpg",
+      //             "caption": " A Towering Landmark ",
+      //             "description": " The Qutub Minar is a soaring tower located in the Qutb complex of Delhi, India. Built in the early 13th century by Qutb-ud-din Aibak, it stands as a testament to the city's rich history and architectural heritage. ",
+      //             "historicalSignificance": "The Qutub Minar is renowned as the tallest brick minaret in the world and a UNESCO World Heritage Site. It commemorates the victory of Muslim rule in India and serves as a symbol of Islamic art and architecture.     ",
+      //             "Symbol": " It symbolizes Delhi's multicultural identity and historical legacy, attracting visitors with its intricate carvings, ancient inscriptions, and panoramic views from the top.   ",
+      //             "Cultural": "It holds cultural significance as a sacred site for both Muslims and Hindus, reflecting the syncretic nature of Indian society and the enduring legacy of Delhi's medieval past.  ",
+      //             "keyFeatures": {
+      //               "one": "The Qutub Minar stands at a height of 72.5 meters (237.8 feet) and features five distinct stories, each adorned with intricate balconies, calligraphy, and geometric patterns. ",
+      //               "two": "The surrounding Qutb complex houses several other architectural marvels, including the Quwwat-ul-Islam Mosque, Alai Darwaza, and Iron Pillar of Delhi, dating back to the 4th century CE. ",
+      //               "three": "Visitors can ascend the spiral staircase inside the minaret to enjoy panoramic views of Delhi's skyline and explore the rich history and cultural heritage of the Qutb complex.  "
+      //             }
+      //           },
+      //           "indiaGate": {
+      //             "name": "India Gate",
+      //             "image": "./imgs/india_gate.jpg",
+      //             "caption": " An Iconic War Memorial ",
+      //             "description": " India Gate is a monumental arch located in the heart of New Delhi, India. Built in the early 20th century as a memorial to Indian soldiers who died in World War I, it stands as a tribute to their sacrifice and valor. ",
+      //             "historicalSignificance": "India Gate serves as a national symbol of remembrance and patriotism, honoring the memory of over 70,000 Indian soldiers who lost their lives fighting for the British Empire during World War I.     ",
+      //             "Symbol": " It symbolizes India's resilience and spirit of unity in the face of adversity, drawing visitors and locals alike to pay homage to the nation's fallen heroes and celebrate its rich military heritage.   ",
+      //             "Cultural": "It holds cultural significance as a popular gathering place for picnics, festivals, and recreational activities, reflecting the vibrant social fabric and communal spirit of New Delhi.  ",
+      //             "keyFeatures": {
+      //               "one": "The imposing India Gate stands at a height of 42 meters (138 feet) and features intricate carvings, inscriptions, and bas-reliefs honoring the soldiers who sacrificed their lives during the war. ",
+      //               "two": "Surrounded by lush lawns and gardens, the memorial serves as a serene oasis amidst the bustling streets of New Delhi, providing a peaceful retreat for visitors to relax and reflect. ",
+      //               "three": "The Amar Jawan Jyoti, an eternal flame burning beneath the arch, symbolizes the undying spirit of India's soldiers and serves as a solemn reminder of their sacrifice and bravery.  "
+      //             }
+      //           },
+      //           "lotusTemple": {
+      //             "name": "Lotus Temple",
+      //             "image": "./imgs/lotus_temple.jpg",
+      //             "caption": " A Symbol of Unity and Peace ",
+      //             "description": " The Lotus Temple, located in New Delhi, India, is a Bahá'í House of Worship known for its distinctive lotus-shaped architecture and serene ambiance. Built in 1986, it serves as a spiritual center for people of all faiths. ",
+      //             "historicalSignificance": "The Lotus Temple is renowned as a symbol of unity, diversity, and religious tolerance, welcoming visitors from around the world to meditate, pray, and reflect in its tranquil surroundings.     ",
+      //             "Symbol": " It symbolizes the Bahá'í faith's principles of unity, equality, and harmony among all people, transcending cultural, religious, and national boundaries to foster understanding and peace.   ",
+      //             "Cultural": "It holds cultural significance as a spiritual sanctuary and architectural marvel, drawing inspiration from nature's beauty and universal themes of love, compassion, and enlightenment.  ",
+      //             "keyFeatures": {
+      //               "one": "The Lotus Temple's unique lotus-shaped design features 27 marble-clad petals arranged in clusters of three, symbolizing the interconnectedness of all religions and the essential unity of humanity. ",
+      //               "two": "The central prayer hall, with its spacious interior and serene atmosphere, offers a quiet space for visitors to meditate, contemplate, and connect with their inner selves and the divine. ",
+      //               "three": "Surrounded by lush gardens and reflecting pools, the Lotus Temple provides a peaceful oasis amidst the bustling city, inviting people of all backgrounds to seek solace, inspiration, and spiritual renewal.  "
+      //             }
+      //           }
+      //         }
+      //       },
+      //       {
+      //         "kerala": {
+      //           "alleppey": {
+      //             "name": "Alleppey (Alappuzha)",
+      //             "image": "./imgs/alleppey.jpg",
+      //             "caption": " The Venice of the East ",
+      //             "description": " Alleppey, also known as Alappuzha, is a picturesque town located in the backwaters of Kerala, India. Renowned for its serene canals, lush paddy fields, and tranquil backwater cruises, it offers visitors a glimpse into the idyllic charm of Kerala's coastal landscape. ",
+      //             "historicalSignificance": "Alleppey has a rich history as a major center for trade, commerce, and cultural exchange since ancient times. It was once a prominent port city under the rule of various dynasties and colonial powers.     ",
+      //             "Symbol": " It symbolizes Kerala's unique blend of natural beauty, cultural heritage, and traditional way of life, attracting tourists from around the world to experience its enchanting backwaters and vibrant village life.   ",
+      //             "Cultural": "It holds cultural significance as a hub for traditional boat races, folk arts, and festivals, showcasing Kerala's rich cultural heritage and communal harmony among its diverse communities.  ",
+      //             "keyFeatures": {
+      //               "one": "Alleppey is renowned for its extensive network of backwater canals, lagoons, and lakes, offering visitors the opportunity to explore its scenic beauty aboard traditional houseboats or country canoes. ",
+      //               "two": "The annual Nehru Trophy Boat Race, held on the Punnamada Lake in Alleppey, is a major cultural event that attracts thousands of spectators and participants from across Kerala and beyond. ",
+      //               "three": "Alleppey's vibrant marketplaces, waterfront promenades, and historic landmarks such as the Alappuzha Beach, Krishnapuram Palace, and St. Mary's Forane Church provide visitors with a glimpse into its rich cultural and architectural heritage.  "
+      //             }
+      //           },
+      //           "wayanad": {
+      //             "name": "Wayanad",
+      //             "image": "./imgs/wayanad.jpg",
+      //             "caption": " The Land of Green Paradise ",
+      //             "description": " Wayanad is a scenic district located in the Western Ghats of Kerala, India. Known for its lush greenery, mist-clad mountains, and pristine natural beauty, it offers travelers a tranquil retreat amidst nature's bounty. ",
+      //             "historicalSignificance": "Wayanad is steeped in history and mythology, with ancient caves, temples, and tribal settlements dating back thousands of years. It was once part of the Kottayam kingdom and later came under the rule of various dynasties and colonial powers.     ",
+      //             "Symbol": " It symbolizes Kerala's unspoiled natural beauty, biodiversity, and eco-tourism potential, attracting nature lovers, adventure enthusiasts, and wildlife photographers from around the world.   ",
+      //             "Cultural": "It holds cultural significance as a melting pot of diverse indigenous cultures, traditions, and cuisines, reflecting the harmonious coexistence of tribal communities, settlers, and migrants in the region.  ",
+      //             "keyFeatures": {
+      //               "one": "Wayanad is home to lush rainforests, sparkling waterfalls, and verdant tea, coffee, and spice plantations, offering visitors endless opportunities for trekking, birdwatching, and nature photography. ",
+      //               "two": "The Wayanad Wildlife Sanctuary, located in the heart of the district, is a biodiversity hotspot teeming with rare and endemic species of flora and fauna, including elephants, tigers, leopards, and Malabar giant squirrels. ",
+      //               "three": "Wayanad's cultural attractions, such as the Edakkal Caves, Thirunelli Temple, and Banasura Sagar Dam, provide insights into its rich history, mythology, and architectural heritage, attracting history buffs and spiritual seekers alike.  "
+      //             }
+      //           },
+      //           "kozhikode": {
+      //             "name": "Kozhikode (Calicut)",
+      //             "image": "./imgs/kozhikode.jpg",
+      //             "caption": " The City of Spices ",
+      //             "description": " Kozhikode, also known as Calicut, is a historic city located on the Malabar Coast of Kerala, India. Renowned for its centuries-old maritime trade, colonial heritage, and exotic spices, it offers visitors a glimpse into Kerala's rich cultural and culinary legacy. ",
+      //             "historicalSignificance": "Kozhikode has a rich history as a major port city and trading hub since ancient times, attracting merchants, explorers, and settlers from across the globe. It was once the capital of the powerful Zamorin dynasty and a thriving center for trade, commerce, and cultural exchange.     ",
+      //             "Symbol": " It symbolizes Kerala's maritime legacy, cosmopolitan ethos, and culinary heritage, drawing visitors with its bustling markets, historic landmarks, and delectable Malabari cuisine.   ",
+      //             "Cultural": "It holds cultural significance as a melting pot of diverse communities, languages, and religions, reflecting the vibrant social fabric and communal harmony that define Kerala's multicultural identity.  ",
+      //             "keyFeatures": {
+      //               "one": "Kozhikode's historic landmarks, such as the Kappad Beach, Beypore Port, and Pazhassiraja Museum, provide insights into its rich maritime history, colonial heritage, and cultural contributions to Kerala's identity. ",
+      //               "two": "The bustling markets of Kozhikode, including the Spice Market, Sweet Meat Street, and Mittai Theruvu (Sweet Street), offer visitors a sensory feast of flavors, aromas, and colors, showcasing the region's diverse culinary traditions and delicacies. ",
+      //               "three": "Kozhikode's vibrant festivals, such as the Kozhikode Beach Festival, Malabar Mahotsavam, and Boat Races, celebrate its cultural heritage, traditional arts, and performing arts, attracting tourists and locals alike to participate in the festivities.  "
+      //             }
+      //           },
+      //           "bekal": {
+      //             "name": "Bekal",
+      //             "image": "./imgs/bekal.jpg",
+      //             "caption": " A Coastal Paradise ",
+      //             "description": " Bekal is a scenic coastal town located in the Kasaragod district of Kerala, India. Known for its pristine beaches, historic fort, and scenic backwaters, it offers travelers a tranquil retreat amidst nature's beauty. ",
+      //             "historicalSignificance": "Bekal has a rich history as a strategic military outpost and trading center dating back to ancient times. It was once ruled by various dynasties and colonial powers, including the Kadambas, Vijayanagara Empire, and Tipu Sultan, before coming under British rule.     ",
+      //             "Symbol": " It symbolizes Kerala's coastal charm, architectural heritage, and eco-tourism potential, attracting visitors with its stunning vistas, cultural landmarks, and serene ambiance.   ",
+      //             "Cultural": "It holds cultural significance as a cultural and historical landmark, showcasing the architectural brilliance and military prowess of its erstwhile rulers, while offering visitors insights into Kerala's rich maritime history and cultural heritage.  ",
+      //             "keyFeatures": {
+      //               "one": "Bekal is home to the iconic Bekal Fort, a historic citadel overlooking the Arabian Sea, which offers panoramic views of the coastline and surrounding landscapes"
+      //             }
+      //           }
+      //         }
+      //       },
+      //       {
+      //         "goa": {
+
+      //         }
+      //       }
+      //     ]
+      //   ],
+      //   "comments": [
+    </script>
+    <!-- <script src="touristPlaces.js"></script> -->
+  </body>
+</html>

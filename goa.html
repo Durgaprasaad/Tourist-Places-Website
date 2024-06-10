@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script type="module" src="touristPlaces.js"></script> -->
+
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      /* box-sizing: border-box; */
+    }
+
+    body {
+      /* background-color: rgb(230, 230, 220); */
+    }
+
+    .navbar {
+      width: 95%;
+      height: 8vh;
+      margin: 10px 35px;
+      position: relative;
+      background-color: navajowhite;
+      border: 150px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      z-index: 12;
+    }
+
+    #logo {
+      margin-left: 20px;
+      margin-top: 5px;
+      border-radius: 25px;
+    }
+
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+    li {
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: none;
+      list-style: none;
+      display: inline;
+      letter-spacing: 1px;
+      margin: 70px;
+      /* margin: -50px 0px 250px 10px; */
+    }
+    ul {
+      margin-top: -40px;
+      margin-left: 250px;
+    }
+
+    .card-container {
+      perspective: 500px;
+      /* border: 1px solid; */
+      margin-left: 30vw;
+      padding-bottom: 40px;
+    }
+
+    .card {
+      width: 60vw;
+      border: 1px solid;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 25px;
+      margin-left: -150px;
+      height: 520px;
+      transition: transform 0.5s;
+      transform-style: preserve-3d;
+    }
+
+    .card.flipped {
+      transform: rotateY(180deg);
+    }
+
+    .front,
+    .back {
+      width: 100%;
+      height: 100%;
+      /* border: 2px solid;
+      border-radius: 20px; */
+      position: absolute;
+      backface-visibility: hidden;
+    }
+
+    .front {
+      z-index: 2;
+    }
+
+    .back {
+      transform: rotateY(180deg);
+    }
+
+    button {
+      margin-top: 20px;
+      border-radius: 20px;
+      padding: 8px;
+      border: 0.1px solid;
+    }
+
+    #imgg {
+      height: 300px;
+      margin-top: 10px;
+      margin-left: 100px;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      border-radius: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      /* text-align: center; */
+      margin-left: 5px;
+    }
+
+    #charmnarimg{
+      height: 350px;
+      margin-left: 180px;
+      margin-top: 30px;
+    }
+
+    #golcondaimg{
+       height: 240px;
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+       margin-left: 50px;
+      margin-top: 80px;
+    }
+
+    #nehruimg{
+       height: 320px;
+       margin-left: 140px;
+      margin-top: 30px;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+    #hussainimg{
+      height: 280px;
+       margin-left: 50px;
+      margin-top: 30px;
+    }
+
+    .footer1{
+  border: 1px solid ;
+  display: flex;
+  width: 60vw;
+  padding: 20px;
+  position: absolute;
+  border-radius: 20px;
+  background-color: white;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: 18vw;
+  margin-top: 10vh;
+}
+
+.inner p{
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-top: 18px;
+}
+
+.inner h4{
+  margin-top: 10px;
+}
+
+.mainftr{
+  border: 1px solid;
+  background-color: rgb(46,52,61);
+  height: 70vh;
+  position: relative;
+  margin-top: 20vh;
+}
+
+.inner {
+    border-right: 1px solid #000; /* Add a vertical border to the right */
+    padding-right: 15px; /* Optional: Add some space between the border and the content */
+    margin-right: 15px; /* Optional: Add some space between the border and the next div */
+  }
+
+  /* Style the last .inner to remove the border */
+  .inner:last-child {
+    border-right: none;
+  }
+
+  /* Optional: Adjust alignment and spacing */
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mainftrchild{
+    margin-top: 50vh;
+  }
+  .mainftrchild p {
+    text-align: center;
+    color: white;
+  }
+
+   .mainftrchild h3 {
+    text-align: center;
+    color: white;
+  }
+
+
+
+
+
+  </style>
+  <body>
+    <div id="container">
+      <div class="navbar">
+        <img
+          src="./imgs/539f3910c2a6d_thumb900.jpg"
+          id="logo"
+          height="50px"
+          alt=""
+        />
+        <ul>
+          <a href=""><li>Home</li></a>
+          <a href=""> <li>Places To Visit</li></a>
+          <a href=""> <li>Latest</li></a>
+          <a href=""> <li>About us</li></a>
+        </ul>
+      </div>
+    </div>
+    <!-- <a href="./goa/"></a> -->
+
+    <script>
+console.log("bkj")
+
+telangana=JSON.parse(localStorage.getItem("telangana"))
+console.log(telangana);
+
+id=["charmnarimg","hussainimg","golcondaimg","nehruimg","charmnarimg","hussainimg","golcondaimg","nehruimg","charmnarimg","hussainimg","golcondaimg","nehruimg","charmnarimg","hussainimg","golcondaimg","nehruimg"]
+
+var path=["./telangana/charminar.html","./telangana/Hussain-Sagar.html","./telangana/Golconda.html","./telangana/nehru.html","./delhi/Red-fort.html","./delhi/Qutub.html","./delhi/IndiaGate.html","./delhi/Lotus.html","./kerala/Alleppey.html","./kerala/Wayanad.html","./kerala/Kozhikode.html","./kerala/Bekal.html","./goa/Palolem.html","./goa/Deltin.html","./goa/Fontainhas.html","./goa/fortAguada.html"]
+console.log(telangana[0]["image"])
+for (let i = 12; i <= 15; i++) {
+            let cardContainer = document.createElement("div");
+            cardContainer.classList.add("card-container");
+            document.body.appendChild(cardContainer);
+
+            let card = document.createElement("div");
+            card.classList.add("card");
+            cardContainer.appendChild(card);
+
+            let front = document.createElement("div");
+            front.classList.add("front");
+
+           
+           let frontContent = `
+        <img src="${telangana[i]["image"]}" id="${id[i]}" >
+    <center><h2>${telangana[i]["name"]}</h2></center>
+    <center><p>${telangana[i]["caption"]}</p></center>
+    <center>
+        <button class="seeMoreButton">See More</button>
+        <a href="${path[i]}">
+
+            <button class="visitButton">Visit</button>
+        </a>
+    </center>
+    `;
+
+
+            front.innerHTML = frontContent;
+
+            let back = document.createElement("div");
+            back.classList.add("back");
+            let backContent = `
+        <p>${telangana[i]["description"]}</p><br>
+        <h4>Key Features:</h4>
+        <p>- ${telangana[i]["keyFeatures"]["one"]}</p>
+        <p>- ${telangana[i]["keyFeatures"]["two"]}</p>
+        
+        <h4>Historical Significance:</h4>
+        <p>${telangana[i]["historicalSignificance"]}</p><br>
+        <h4>Symbol of Hyderabad:</h4>
+        <p>${telangana[i]["Symbol"]}</p><br>
+        <h4>Cultural Hub:</h4>
+        <p>${telangana[i]["Cultural"]}</p><br>
+        <button class="flipToFrontButton">Back to Front</button>
+    `;
+            back.innerHTML = backContent;
+            card.appendChild(front);
+            card.appendChild(back);
+            let seeMoreButton = card.querySelector(".seeMoreButton");
+            seeMoreButton.addEventListener("click", function () {
+              card.classList.toggle("flipped");
+            });
+
+            let flipToFrontButton = card.querySelector(".flipToFrontButton");
+            flipToFrontButton.addEventListener("click", function () {
+              card.classList.remove("flipped");
+            });
+          }
+
+          </script>
+
+          <div class="footer1">
+      <div style="display: flex; margin-left: 50px;">
+        <div class="inner">
+          <h4>ABOUT VisitIndia</h4>
+          <p>ABOUT US</p>
+          <p>VisitIndia REVIEWS</p>
+          <p>WE ARE HIRING</p>
+          <p>PRIVACY POLICIES</p>
+          <p>COPYRIGHT POLICIES</p>
+          <p>APPS</p>
+          <p>SUPPORT</p>
+        </div>
+
+        <div class="inner" style="margin-left: 30px;">
+          <h4>FOR SUPPLIERS</h4>
+          <p>ABOUT US</p>
+          <h4>FOR BRANDS</h4>
+          <p>PARTNER WITH US</p>
+          <p>DESTINATION MARKETING</p>
+          <h4>FOR TRAVEL AGENTS</h4>
+          <p>SIGN UP AS A AGENT</p>
+          <p>AGENT LOGIN</p>
+        </div>
+
+        <div class="inner">
+          <h4>FOR TRAVELLERS</h4>
+          <p>GIFT AN EXPERIENCE</p>
+        </div>
+      </div>
+
+      <div style="margin-left: 80px;">
+        <h4>TRAVEL DESTINATIONS</h4>
+        <img src="./imgs/Screenshot 2024-04-14 194840.png" height="300px" alt="">
+
+      </div>
+    </div>
+
+    <div class="mainftr">
+
+      <div class="mainftrchild">
+        <h3>© 2024 VisitIndia.com All rights reserved.</h3>
+        <p>The content and images used on this site are copyright protected and copyrights vests with the respective owners. The usage of the content and images on this website is intended to promote the works</p>
+        <p>and no endorsement of the artist shall be implied. Unauthorized use is prohibited and punishable by law.</p>
+      </div>
+
+    </div>
+          </body>
+
+          
+        

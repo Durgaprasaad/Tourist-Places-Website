@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: rgb(246, 248, 251);
+      }
+
+      .navbar {
+        width: 95%;
+        height: 8vh;
+        margin: 10px 35px;
+        position: relative;
+        background-color: white;
+        border: 1px solid;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        z-index: 12;
+      }
+
+      #logo {
+        margin-left: 20px;
+        margin-top: 5px;
+        border-radius: 25px;
+      }
+
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+      li {
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        list-style: none;
+        display: inline;
+        letter-spacing: 1px;
+        margin: 70px;
+        /* margin: -50px 0px 250px 10px; */
+      }
+      ul {
+        margin-top: -40px;
+        margin-left: 250px;
+      }
+
+      #container2 {
+        border: 2px solid;
+        height: 500px;
+        display: flex;
+      }
+
+      #div1 {
+        height: 500px;
+        width: 800px;
+        background-color: aqua;
+      }
+      #div2 {
+        height: 500px;
+        width: 800px;
+        background-color: aqua;
+        margin-left: 20px;
+      }
+
+      #title {
+        border: 1px solid;
+        margin-top: 20px;
+        width: 700px;
+        border-radius: 5px;
+        margin-left: 200px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+
+      .line {
+        /* display: inline; */
+        height: 40px;
+        width: 5px;
+        background-color: orangered;
+        margin-top: -10px;
+        margin-left: 4px;
+      }
+
+      #head {
+        display: inline;
+        margin-top: -5px;
+        font-size: 25px;
+        font-weight: 900;
+        letter-spacing: px;
+        margin-left: 20px;
+      }
+
+      .rating {
+        border: 1px solid;
+        width: 50px;
+        color: white;
+        background-color: green;
+        padding: 10px;
+        margin-left: 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        font-weight: 700;
+      }
+
+      i {
+        color: orangered;
+        padding-right: 8px;
+      }
+
+      p {
+        font-size: 18px;
+        margin-left: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <!-- <video src="./imgs/bg.mp4" id="video_bg" autoplay muted loop></video> -->
+      <div class="navbar">
+        <img
+          src="../imgs/539f3910c2a6d_thumb900.jpg"
+          id="logo"
+          height="50px"
+          alt=""
+        />
+        <ul>
+          <a href=""><li>Home</li></a>
+          <a href=""> <li>Places To Visit</li></a>
+          <a href=""> <li>Latest</li></a>
+          <a href=""> <li>About us</li></a>
+        </ul>
+      </div>
+    </div>
+    <div id="container2">
+      <div id="div1"></div>
+      <div id="div2"></div>
+    </div>
+    <div id="title">
+      <div style="display: flex">
+        <div class="line"></div>
+        <h3 id="head" style="">Qutub Minar Entry Ticket, Delhi</h3>
+      </div>
+      <div class="rating">4.5/5</div>
+      <p>(40 reviews) <i class="bx bx-location-plus">Delhi</i></p>
+    </div>
+
+    <div id="title" style="padding-bottom: 20px">
+      <div style="display: flex">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/432/432312.png"
+          alt=""
+          style="margin-left: 60px"
+          height="80px"
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1376/1376388.png"
+          height="80px"
+          style="margin-left: 60px"
+          alt=""
+        />
+      </div>
+      <p
+        style="
+          display: inline;
+          margin-left: 50px;
+          font-size: 15px;
+          font-weight: 550;
+        "
+      >
+        Fixed day Ticket
+      </p>
+      <p
+        style="
+          display: inline;
+          margin-left: 25px;
+          font-size: 15px;
+          font-weight: 550;
+        "
+      >
+        Mobile Voucher
+      </p>
+    </div>
+
+   <div id="title">
+  <div style="display: flex">
+    <div class="line"></div>
+    <h3 id="head" style="">Qutub Minar Entry Ticket Highlights</h3>
+  </div>
+  <p>
+    <i class="bx bx-target-lock"></i>Explore the architectural masterpiece of Qutub Minar, a UNESCO World Heritage Site and the tallest brick minaret in the world.
+  </p>
+  <p>
+    <i class="bx bx-target-lock"></i>Marvel at the intricate carvings and beautiful Islamic architecture of this historic monument, which dates back to the 12th century.
+  </p>
+  <p>
+    <i class="bx bx-target-lock"></i>Climb to the top of Qutub Minar and enjoy panoramic views of Delhi's skyline from the observation deck.
+  </p>
+  <p>
+    <i class="bx bx-target-lock"></i>Learn about the rich history and cultural significance of Qutub Minar through informative exhibits and guided tours.
+  </p>
+</div>
+
+<div id="title">
+  <div style="display: flex">
+    <div class="line"></div>
+    <h3 id="head" style="">Qutub Minar Overview</h3>
+  </div>
+
+  <div>
+    <p>
+      <span>Activity Location:</span> Mehrauli, New Delhi, Delhi 110030, India
+    </p>
+    <p>
+      <span>Activity Timings:</span> 10:00 AM - 5:30 PM (Open all days)
+    </p>
+    <p>
+      <span>Activity Duration:</span> 1-2 Hours (approx.)
+    </p>
+    <p>
+      <span>About the Qutub Minar Entry Ticket, Delhi:</span><br />Explore the architectural masterpiece of Qutub Minar, a UNESCO World Heritage Site and one of the most iconic landmarks of Delhi. Built in the early 13th century, Qutub Minar is the tallest brick minaret in the world, standing at a height of 73 meters. Marvel at the intricate carvings and beautiful Islamic architecture of this historic monument, which is adorned with verses from the Quran and intricate geometric patterns. Climb to the top of Qutub Minar and enjoy panoramic views of Delhi's skyline from the observation deck. Learn about the rich history and cultural significance of Qutub Minar through informative exhibits and guided tours. Don't miss the opportunity to explore the other historic attractions in the Qutub Complex, including the Alai Darwaza, Iron Pillar, and Quwwat-ul-Islam Mosque. Book your Qutub Minar Entry Ticket and experience the grandeur of Delhi's rich architectural heritage.
+    </p>
+    <p>
+      <span>About Qutub Minar Entry Ticket:</span><br />
+      <i class="bx bx-target-lock"></i>Explore the architectural masterpiece of Qutub Minar, a UNESCO World Heritage Site. <br />
+      <i class="bx bx-target-lock"></i>Marvel at the intricate carvings and beautiful Islamic architecture of this historic monument. <br />
+      <i class="bx bx-target-lock"></i>Climb to the top of Qutub Minar and enjoy panoramic views of Delhi's skyline. <br />
+      <i class="bx bx-target-lock"></i>Learn about the rich history and cultural significance of Qutub Minar through informative exhibits and guided tours.
+    </p>
+
+    <p>
+      <span>How to Reach:</span> <br />
+      <i class="bx bx-target-lock"></i> <span>Nearest Metro Station:</span> Qutub Minar Metro Station is the nearest metro station located on the Yellow Line of the Delhi Metro. It is located within walking distance from Qutub Minar. <br />
+      <i class="bx bx-target-lock"></i> <span>Nearest Bus Stop:</span> Qutub Minar Bus Stop is the nearest bus stop located near the monument. You can hire a taxi or use public transportation to reach Qutub Minar from the bus stop. <br />
+      <i class="bx bx-target-lock"></i> <span>Nearest Railway Station:</span> Hazrat Nizamuddin Railway Station is the nearest railway station located at a distance of approximately 15 km from Qutub Minar. You can hire a taxi or use public transportation to reach Qutub Minar from the railway station.
+    </p>
+  </div>
+</div>
+
+
+
+
+    <div id="title">
+      <div style="display: flex">
+        <div class="line"></div>
+        <h3 id="head" style="">More Details about Qutub Minar Entry Ticket</h3>
+      </div>
+
+      <div>
+        <h3>Know Before You Go for Qutub Minar Entry Ticket:</h3>
+        <p>
+          <i class="bx bx-target-lock"></i>Recommended to carry a copy of your
+          vaccination certificate and follow safety protocols as mandated by
+          local administration.
+        </p>
+        <p>
+          <i class="bx bx-target-lock"></i>Visitors shall be required to show
+          photo identity proof in original at the entry to the monument.
+        </p>
+        <p><i class="bx bx-target-lock"></i>Entry ticket is non refundable</p>
+        <p>
+          <i class="bx bx-target-lock"></i>Any breakage or damage of any items
+          will be charged at actuals.
+        </p>
+        <p><i class="bx bx-target-lock"></i>Please adhere to the timings.</p>
+        <p><i class="bx bx-target-lock"></i>The package cannot be split.</p>
+        <p>
+          <i class="bx bx-target-lock"></i>Maintain social distancing in public
+          places.
+        </p>
+        <p>
+          <i class="bx bx-target-lock"></i>All foreign nationals must share
+          their passport and visa details at the time of arrival.
+        </p>
+        <p>
+          <i class="bx bx-target-lock"></i>ID proof is mandatory for each
+          individual guest at the time of arrival. A PAN card will not be
+          considered valid address proof.
+        </p>
+      </div>
+    </div>
+
+
+       <div id="title" style="width: 350px; position: relative;">
+      
+      <p style=" text-align: center; opacity: 0.6;">Starting from <span style="text-decoration: line-through;"> INR 499</span></p>
+      <h3 style="font-size: 24px; text-align: center;">INR 299/- Only Per Adult</h3>
+      <button id="booknowBtn" style="width: 280px; padding: 10px; background-color: orangered; color: white; font-weight: 700; border: 0.1px solid; border-radius: 5px; margin-left: 25px; padding:15px 0px; ">Book Now</button>
+         </body>
+
+         <script>
+
+          bookNowBtn=document.getElementById("booknowBtn")
+          bookNowBtn.addEventListener("click",()=>{
+            window.location.assign("../bookingForm.html")
+          })
+        
+         </script>
+</html>

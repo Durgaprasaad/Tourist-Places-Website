@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Booking Form</title>
+  <style>
+    #ticket {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    form{
+      border: 1px solid;
+      width: 50%;
+      border-radius: 10px;
+    }
+
+    input{
+      padding: 10px;
+      border-radius: 10px;
+      border: 0.1px solid;
+      margin-left: 20px;
+    }
+
+    label{
+      font-size: 16px;
+      margin-left: 20px;
+    }
+
+    textarea{
+      margin-left: 20px;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <h2>Booking Information</h2>
+  <form id="bookingForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="phone">Phone:</label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+    
+    <label for="tour">Tour Package:</label><br>
+    <select id="tour" name="tour" required>
+      <option value="">Select a Tour Package</option>
+      <option value="Package 1">Package 1</option>
+      <option value="Package 2">Package 2</option>
+      <option value="Package 3">Package 3</option>
+    </select><br><br>
+    
+    <label for="date">Tour Date:</label><br>
+    <input type="date" id="date" name="date" required><br><br>
+    
+    <label for="participants">Number of Participants:</label><br>
+    <input type="number" id="participants" name="participants" min="1" required><br><br>
+    
+    <label for="message">Additional Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+
+  <div id="ticket" style="display: none;">
+    <h2>Booking Ticket</h2>
+    <p><strong>Name:</strong> <span id="ticketName"></span></p>
+    <p><strong>Email:</strong> <span id="ticketEmail"></span></p>
+    <p><strong>Phone:</strong> <span id="ticketPhone"></span></p>
+    <p><strong>Tour Package:</strong> <span id="ticketTour"></span></p>
+    <p><strong>Tour Date:</strong> <span id="ticketDate"></span></p>
+    <p><strong>Number of Participants:</strong> <span id="ticketParticipants"></span></p>
+    <p><strong>Additional Message:</strong> <span id="ticketMessage"></span></p>
+  </div>
+
+  <script>
+    document.getElementById("bookingForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+    
+      var formData = new FormData(this);
+    
+      document.getElementById("ticketName").innerText = formData.get("name");
+      document.getElementById("ticketEmail").innerText = formData.get("email");
+      document.getElementById("ticketPhone").innerText = formData.get("phone");
+      document.getElementById("ticketTour").innerText = formData.get("tour");
+      document.getElementById("ticketDate").innerText = formData.get("date");
+      document.getElementById("ticketParticipants").innerText = formData.get("participants");
+      document.getElementById("ticketMessage").innerText = formData.get("message");
+
+
+      document.getElementById("ticket").style.display = "block";
+    });
+  </script>
+</body>
+</html>
